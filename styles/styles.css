@@ -1,0 +1,320 @@
+/* ===============================================================================
+Styles for flyo landing page:
+svg generator: https://getwaves.io/
+curved css: https://redstapler.co/curved-custom-shape-div-css-svg/
+=================================================================================== */
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+/* Custom Properties */
+
+:root {
+  /* Primary */
+  --v-dark-blue: hsl(243, 87%, 12%);
+  --d-blue: hsl(238, 22%, 44%);
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --mod-cyan: hsl(170, 45%, 43%);
+  /* Neautral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+  /* hover */
+  --hover-blue: #2d3270;
+}
+
+/* Resets */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  /* mobile viewport bug fix */
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Mobile First */
+
+/* General */
+.svg-img {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--v-dark-blue);
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  font-size: 2.2rem;
+  /* t-r-b-l */
+  margin: 5rem 0 4rem 0;
+  text-align: center;
+  color: var(--v-dark-blue);
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--v-dark-blue);
+  font-family: "Open Sans", sans-serif;
+}
+.p-one {
+  padding-bottom: 2rem;
+  color: var(--d-blue);
+}
+input {
+  width: 80vw;
+  padding-block: 1rem;
+  /* t-r-b-l */
+  margin: 4rem 0 2rem 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+.btn {
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--bright-blue);
+  margin-bottom: 7rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: var(--bright-blue);
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 80vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:hover {
+  background-color: white;
+  border: 0.1rem solid var(--bright-blue);
+  color: var(--bright-blue);
+}
+
+.main-grid {
+  display: grid;
+  margin: auto;
+  /* t-r-b-l */
+  margin: 0 3rem 0 3rem;
+}
+.grid-item-one,
+.grid-item-two {
+  text-align: center;
+}
+.section {
+  /* bit hacky, overlap curve */
+  background-color: #f8f8fe;
+  margin: auto;
+  /* t-r-b-l */
+  margin-top: -1rem;
+  padding: 0 3rem 3rem 3rem;
+}
+/* Footer */
+.footer {
+  display: grid;
+  justify-content: center;
+  background-color: var(--v-dark-blue);
+  padding: 10rem 10rem 10rem 10rem;
+  gap: 3rem;
+}
+.ft-img {
+  margin-bottom: 2rem;
+}
+.footer-links > a {
+  display: grid;
+  padding-bottom: 1rem;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.footer-links > a:hover {
+  color: var(--bright-blue);
+}
+/* Scoail icons */
+.flex-soc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Link */
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0 2rem 0;
+}
+.w-link {
+  font-size: 1.8rem;
+  color: var(--mod-cyan);
+  font-family: "Open Sans", sans-serif;
+}
+.w-link:hover {
+  color: var(--bright-blue);
+}
+.line {
+  display: block;
+  border: 0.1rem solid var(--mod-cyan);
+  margin: auto;
+  border-radius: 0.1rem;
+  width: 17rem;
+}
+/* Testimonial */
+.flex-two {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.card {
+  width: 90%;
+  padding: 3rem 3rem 3rem 3rem;
+  background-color: white;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  border-radius: 1rem;
+  box-shadow: rgba(166, 160, 160, 0.24) 0px 1px 10px;
+}
+h4 {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+.test-p {
+  margin: 1rem 0 2rem 0;
+  font-size: 1.5rem;
+}
+.test-nme {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+.test-icon {
+  max-width: 4rem;
+  border-radius: 50%;
+}
+/* Get early access today */
+.grid-three {
+  padding-block: 10rem;
+  background-color: var(--d-blue);
+  text-align: center;
+}
+h3 {
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.acc {
+  color: white;
+  font-size: 1.5rem;
+  /* t-r-l-b */
+  padding: 0 1rem 1rem 0;
+  font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (min-width: 70em) {
+  .main-grid,
+  .grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+  }
+  .grid-three {
+    display: grid;
+    text-align: start;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+  }
+  .grid-three-back {
+    background-color: var(--d-blue);
+  }
+
+  .acc-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .btn-flex {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .svg-img {
+    margin-bottom: 0;
+  }
+  input {
+    width: 30rem;
+    margin: 0;
+  }
+  .btn {
+    width: 20rem;
+    margin: 0;
+  }
+  .grid-item-one,
+  .grid-item-two {
+    text-align: start;
+    align-items: center;
+  }
+  .grid-item-two,
+  .grid-item-card {
+    max-width: 80%;
+  }
+  .card {
+    margin: 0;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+  .grid-item-one {
+    order: 2;
+  }
+  .grid-two {
+    margin-top: -20rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    text-align: start;
+  }
+  .flex {
+    justify-content: start;
+  }
+  .line {
+    margin: 0;
+  }
+}
